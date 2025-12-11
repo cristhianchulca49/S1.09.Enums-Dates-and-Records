@@ -1,4 +1,4 @@
-package Level1.E2;
+package Level1.E2_E3;
 
 import org.junit.Test;
 
