@@ -4,8 +4,4 @@ public enum Level {
     LOW,
     MEDIUM,
     HIGH;
-
-    public boolean battery() {
-        return this == LOW;
-    }
 }
