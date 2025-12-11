@@ -12,7 +12,7 @@ public class TestCarServices {
         int percentHigh = 100;
 
         assertEquals("LOW BATTERY: cannot start the car", CarServices.checkBattery(percentLow));
-        assertEquals("MEDIUM BATTERY: can only star only eco mode", CarServices.checkBattery(percentMedium));
+        assertEquals("MEDIUM BATTERY: can only start in eco mode", CarServices.checkBattery(percentMedium));
         assertEquals("HIGH BATTERY: can start in power mode", CarServices.checkBattery(percentHigh));
     }
 
