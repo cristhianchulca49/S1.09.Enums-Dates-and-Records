@@ -8,7 +8,7 @@ public class TestTask {
     @Test
     public void testCheckBattery() {
         assertEquals("LOW BATTERY: cannot star the car", Task.checkBattery(Level.LOW));
-        assertEquals("MEDIUM BATTERY: starting eco mode", Task.checkBattery(Level.MEDIUM));
-        assertEquals("HIGH BATTERY: starting car", Task.checkBattery(Level.HIGH));
+        assertEquals("MEDIUM BATTERY: can only star only eco mode", Task.checkBattery(Level.MEDIUM));
+        assertEquals("HIGH BATTERY: can start in power mode", Task.checkBattery(Level.HIGH));
     }
 }
