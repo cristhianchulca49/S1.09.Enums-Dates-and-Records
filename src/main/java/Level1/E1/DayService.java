@@ -2,10 +2,10 @@ package Level1.E1;
 
 public class DayService {
 
-    public static void checkDay(Day today) {
-        switch (today) {
-            case SATURDAY, SUNDAY -> System.out.println(today + ": is Weekend");
-            default -> System.out.println(today + ": is working day");
-        }
+    public static String checkDay(Day today) {
+        return switch (today) {
+            case SATURDAY, SUNDAY -> today + ": is Weekend";
+            default -> today + ": is working day";
+        };
     }
 }
